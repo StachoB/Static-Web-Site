@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+        <title>Galerie</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png"><!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png"><!--Favicon-->
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png"><!--Favicon-->
+        <meta name="author" content="Barbara Stachowicz"> <!--Auteur du site-->
+        <meta name="keywords" content="Kim Possible Disney Channel animation"> <!-- Mots clés decrivants le site-->
+        <meta name="description" content="Site vitrine sur le thème du dessin animé Kim Possible"> <!-- Description du site-->
+	</head>
+
+	<body>
+    <div id="conteneurg">
+      <!--Navigation Ordinateur-->
+        <header>
+            <a href="../page/acceuil.html"><img src="../img/logo2.png" alt="Logo"></a>
+        <div id=nav>
+        <nav class="barre">
+          <ul>
+            <li><a href="../page/presentation.html">Présentation</a></li>
+            <li><a href="#" >Production</a>    
+             <ul class="sous">
+                    <li><a href="../page/creation.html">Création</a></li>
+                    <li><a href="../page/doublage.html">Doublage</a></li>
+             </ul>  
+            </li>    
+            <li><a href="../page/galerie.html">Galerie</a></li>
+            
+            <li><a href="#" >En savoir +</a>
+            <ul class="sous">  
+                    <li><a href="../page/film.html">Le film</a></li>
+                    <li><a href="../page/episodes.html">Episodes mythiques</a></li>
+                    <li><a href="../page/anectdotes.html">Anecdotes</a></li>
+            </ul> 
+            </li>    
+            <li><a href="../page/quiz.html">Quiz</a></li>
+            
+            <li><a href="#" class="dropbtn">Contact</a>
+                <ul class="sous">
+                    <a href="../page/formulaire.html">Formulaire</a>
+                    <a href="../page/credit.html">Crédits</a>
+                </ul>
+            </li> 
+        </ul>
+        </nav>
+        </div>
+        </header>
+
+        <!-- Navigation sur tablette/mobile -->
+	<!-- Menu Burger -->
+	 <div class="topnav" id="myTopnav">
+    <img src="../img/logo2.png" alt="logo Kim Possible">
+   <div class=iconcontainer>
+             <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)" >
+               <div class="bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+               </div>
+            </a>
+   </div>
+            <br>
+            <br> <br>
+            <a href="../page/acceuil.html">Accueil</a>
+            <a href="../page/presentation.html">Présentation</a>
+            <a href="#"> Production</a>
+            <a href="../page/creation.html" style="text-indent: 2em;">Création</a>
+            <a href="../page/doublage.html" style="text-indent: 2em;">Doublage</a> 
+            <a href="../page/galerie.html">Galerie</a>
+            <a href="#">En savoir +</a>
+            <a href="../page/film.html" style="text-indent: 2em;">Le film</a>
+            <a href="../page/episodes.html" style="text-indent: 2em;">Episodes mythiques</a> 
+            <a href="../page/anectdotes.html" style="text-indent: 2em;">Anecdotes</a> 
+            <a href="../page/quiz.html"> Quiz</a> 
+            <a href="#">Contact</a>
+            <a href="../page/formulaire.html" style="text-indent: 2em;">Formulaire</a>
+            <a href="../page/credit.html" style="text-indent: 2em;">Crédits</a>
+  </div>
+
+  
+    <h1 class="conth1">GALERIE</h1>
+    <div style="width: 100%;">
+      <!--Lightbox-->
+        <div class="row">
+            <div class="column">
+              <img  src="../img/lightbox1.jpg" style="width:100%; border: 0px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="../img/lightbox2.jpg" style="width:100%; border: 0px solid black;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="../img/lightbox3.jpg" style="width:100%; border: 0px solid black;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="../img/lightbox4.jpg" style="width:100%; border: 0px solid black;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="../img/lightbox1.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="../img/lightbox2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="../img/lightbox3.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="../img/lightbox4.jpg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="../img/lightbox1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Shego et Dr Drakken">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../img/lightbox2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Kim Possible Cheerleader">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../img/lightbox3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Kim Possible, Robin Trépide et Rufus">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../img/lightbox4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kim Possible et Shego">
+              </div>
+            </div>
+          </div>
+          
+    </div>
+    <!--Premier conteneur-->
+    <div class="conteneurglobal">
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/96919913&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/beatriz-pinheiro-4" title="Beatriz Pinheiro 4" target="_blank" style="color: #cccccc; text-decoration: none;">Beatriz Pinheiro 4</a> · <a href="https://soundcloud.com/beatriz-pinheiro-4/kim-possible-call-me-beep-me" title="KIm Possible - Call me, beep me - Instrumental" target="_blank" style="color: #cccccc; text-decoration: none;">KIm Possible - Call me, beep me - Instrumental</a></div>
+        <br>
+        <br>
+        <h2>Paroles du générique original</h2>
+        <br>
+        <p>Oh yeah</p>
+        <p>I'm your basic average girl and I'm here to save the world</p>
+        <p>You can't stop me 'cause I'm Kim Possible</p>
+        <p>There is nothin? I can't do and when danger calls</p>
+        <p>Just know that I am on my way</p>
+        <p>(Know that I am on my way)</p>
+        <p>It doesn't matter where or when there's trouble</p>
+        <p>If ya just call me name, Kim Possible</p>
+        <p>Call me, beep me, if ya wanna reach me</p>
+        <p>When ya wanna page me it?s okay</p>
+        <p>Whenever you need me baby</p>
+        <p>Call me, beep me, if ya wanna reach me</p>
+        <p>Call me, beep me, if ya wanna reach me</p>
+        <p>Doesn't matter where, doesn't matter when</p>
+        <p>(Doesn?t matter when)</p>
+        <p>I will be there for you 'til the very end</p>
+        <p>('Til the very end)</p>
+        <p>Danger or trouble, I'm there on the double</p>
+        <p>You know that you always can call, Kim Possible</p>
+        <p>So what's the sitch?</p>
+        <p>Call me, beep me</p>
+        <p>If ya wanna reach me</p>
+    </div>
+    <!--Dernier conteneur-->
+    <div class="conteneurglobal">
+        <br>
+        <h2>Générique original du dessin animé</h2>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GIgLqN_rAXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <div>
+            <p>Barbara Stachowicz - MM01 A20 - <a href="#">Haut de page</a></p>
+            
+        </div>	
+    
+    </footer>
+  </div>
+  <!--Fonctions Lightbox-->
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+<!--Fonctions menu burger-->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+<script>
+  function deroul() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+  }
+  function Bar(x) {
+  x.classList.toggle("change");
+  }
+</script>
+    </body>
+</html>

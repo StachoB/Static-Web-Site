@@ -1,0 +1,1290 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+@font-face {
+    font-family: 'vipnagorgiallaregular';
+    src: url('../font/vipnagorgialla-webfont.woff2') format('woff2'),
+         url('../font/vipnagorgialla-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Fixation de la taille des pages à 1280px maximum*/
+#conteneurg
+{
+	max-width: 1280px;
+	margin:auto;
+}
+
+html{height:100%;}
+/* Mise en forme du header*/
+header{ 
+background-color: black;
+ display: inline-block;
+ width: 100%;
+ position: fixed;
+ top: 0px;
+ z-index: 999;
+ max-width: 1280px;
+
+}
+header img{
+ width: 12%;
+ margin: 5px;
+ margin-left: 15px;
+ margin-top: 15px;
+ 
+}
+
+/* mise en forme des titres de page*/
+h1{
+    font-size: 2em;
+    color: #E0DF18;
+    text-align: center;
+    font-family:  'vipnagorgiallaregular' ;
+}
+
+/* Mise en forme générale*/
+body{
+  background-image: url(../img/background.PNG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  color: white;
+  font-family: 'Roboto Mono';
+  font-size: 1em;
+}
+a{
+    color: #F59A23;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.conth1{
+    clear: both;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-top: 70px;
+    font-size: 2em;
+    color: #E0DF18;
+    font-family:  'vipnagorgiallaregular' ;
+    text-align: left;
+}
+h2{
+    font-size: 2em;
+    color: #E0DF18;
+    text-align: center;
+    font-family: 'Goldman' ;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Roboto Mono';
+    font-size: 1.5em;
+}
+iframe{
+    width: 100%;
+}
+.conteneurglobal{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(44,138,205,0.4);
+    padding: 10px;
+}
+header img{
+    border: 0px;
+}
+img{
+    border: 1px dotted #F59A23;
+}
+
+
+/* Mise en forme du footer*/
+footer{
+    height: 2.5em;
+    font-size: 0.8em;
+    color: #72FF2A;
+    padding: 6px;
+    text-align: center;
+    background-color: #130E0A;
+    width: 100%;
+    max-width: 1280px;
+}
+footer a{
+    color: #F59A23;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+/*****************************************/
+/***********Barre de navigation***********/
+/****************************************/
+nav{
+  width: 100%; 
+  background-color: black;
+  position: relative;
+  float: right;
+  z-index: 1000;    
+}
+
+nav ul{
+  list-style: none; 
+}
+
+.barre li{
+  float: left;
+  width: 16%;
+  position: relative;
+  text-align: center;
+}
+
+.barre a{
+  display: block;
+  text-decoration: none;
+  color: #72FF2A;
+  text-align: center;
+  padding:10px 20px;
+  font-size: 1em;   
+  font-family: 'Goldman';
+}
+
+.barre  a:hover {
+  color: black;
+  background-color: #72FF2A;
+}
+
+.sous{
+  display: none;
+  background-color: black;
+  opacity: 80%;
+  color: #72FF2A;
+  position: absolute;
+  width: 100%;
+  list-style: none;
+}
+nav > ul li:hover .sous{
+  display: block;
+}
+.sous li{
+  float: none;
+  width: 100%;
+  margin-top: 13px;
+  margin-bottom: 3px;
+  
+}
+.sous a{
+  color: #72FF2A;
+  background-color: black;
+  text-decoration: none;
+  font-family: 'Goldman';
+}
+
+.sous a:hover{
+  color: black;
+  background-color: #72FF2A;
+ 
+}
+#nav{
+  float:right;
+  width:85%;
+  margin-top: 25px;
+
+}
+.topnav .icon {
+  display: none;
+}
+.topnav{
+  display: none;}
+
+/***********Fin barre de navigation***********/
+
+/**************************************/
+/********** Vidéo d'acceuil ************/
+/**************************************/
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 40px;
+    text-align: right;
+    font-family: 'Goldman';
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #72FF2A;
+    color: black;
+    text-decoration: none;
+  }
+  #myBtn a{
+      text-decoration: none;
+      color: #72FF2A;
+  }
+  #myBtn a:hover{
+      text-decoration: none;
+      color: black;
+  }
+/********** Fin vidéo d'acceuil ************/
+
+/**************************************/
+/********** Page accueil **************/
+/**************************************/
+
+/* conteneurs de milieu de page */
+#conteneur{
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  background-color: rgba(44,138,205,0.4);
+  color: white;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 1.5em;
+  font-family: 'Roboto Mono';
+  margin-top: 50px;
+}
+#conteneur2{
+margin-top: 100px;
+}
+
+.footerac{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+/********** Fin page accueil **************/
+
+/**************************************/
+/********** Page Episodes **************/
+/**************************************/
+.conteneurglobal{
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color:rgba(44,138,205,0.4) ;
+    margin-bottom: 20px;
+
+}
+.conteneurcentre{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    clear: both;
+}
+
+.conteneurcentre p{
+    font-size: 0.9em;
+    font-family: 'Roboto Mono';
+}
+
+hr{
+    border: 1px dashed #F59A23;
+}
+/********** Fin page Episodes **************/
+
+/*****************************************/
+/*********** Page Galerie*************/
+/****************************************/
+/*Lightbox*/
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+    margin-bottom: -4px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/*********** Fin page Galerie *************/
+
+/*****************************************/
+/*********** Page Création *************/
+/****************************************/
+.conteneuri{
+    width: 100%;
+    float: left;
+}
+.conteneurimgcre{
+    width: 20%;
+    float: left;
+    margin: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: inline-block;
+}
+.conteneurimgcre img{
+    width: 100%;
+    border: 0.1em dotted #F59A23;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.conteneurtextcre{
+    width: 57%;
+    float: right;
+    text-align: justify;
+    /*font-size: 0.9em;*/
+    color: white;
+    font-family: 'Roboto Mono';
+}
+.conth11 h1{
+    font-size: 2em;
+    clear: both;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+/********* Superposition simple de texte sur une image *******/
+/* Conteneur principal */
+.overlay-image {
+    position: relative;
+    width: 100%;
+   }
+   /* Image originale */
+   .overlay-image .image {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+   /* Texte original */
+   .overlay-image .text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+   }
+/********* Hover image et texte *******/
+/* Overlay */
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+   }
+   /* Apparition overlay sur passage souris */
+   .overlay-image:hover .hover {
+    opacity: 1;
+   }
+   /********* Hover background et texte uniquement *******/
+.overlay-image .normal {
+    transition: .5s ease;
+   }
+   .overlay-image:hover .normal {
+    opacity: 0;
+   }
+   .overlay-image .hover {
+    background-color: rgba(0,0,0,0.5);
+   }
+/*********** Fin page Création *************/
+
+/*****************************************/
+/*********** Page Anecdotes *************/
+/****************************************/
+.conteneurglobala{
+    width: 90%;
+    margin: auto;
+}
+.conteneuranecdote{
+    padding: 40px;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.conteneurimga{
+    width: 17%;
+}
+.conteneurimga img{
+    width: 100%;
+    float: left;
+    border: 1px dashed #F59A23;
+    margin: auto;
+}
+
+
+.conteneurtexta{
+    width: 80%;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color:rgba(44,138,205,0.4) ;
+}
+
+.conteneurimg2a{
+    width: 17%;
+    float: right;
+    text-align: center;
+}
+.conteneurimg2a img{
+    width: 100%;
+    border: 1px dashed #F59A23;
+    float:right ;
+    margin: auto;
+}
+
+.conteneurtext2a{
+    width: 80%;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+    text-align: left;
+    background-color:rgba(44,138,205,0.4) ;
+}
+.conteneurtext2a h2{
+    text-align: left;
+}
+
+/*********** Fin page Anecdotes *************/
+
+/**************************************/
+/************ Page Quiz **************/
+/**************************************/
+label {
+    display: block;
+    }
+    
+    input {
+    margin-left: 20px;
+    }
+
+    button {
+        width: 100px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.8);
+        color: #F59A23;
+        border: 1px dotted #F59A23;
+        }
+/************ Fin page Quiz **************/
+
+/**************************************/
+/************ Page Formulaire *********/
+/**************************************/
+legend{
+    font-size: 1.5em;
+    color: #E0DF18;
+    text-align: center;
+    font-family: 'Goldman' ;
+    font-weight: bold;
+}
+input{
+    background-color: black;
+    color: white;
+    border: 1px dotted #F59A23;
+}
+.button{
+    color: #F59A23;
+    padding: 10px;
+}
+textarea{
+    background-color: black;
+    color: white;
+    border: 1px dotted #F59A23;
+}
+/************ Fin page Formulaire **************/
+
+/**************************************/
+/************ Page Crédits ************/
+/**************************************/
+.conteneurcartes{
+    width: 100%;
+}
+.conteneurresumec{
+    clear: both;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: rgba(44,138,205,0.4);
+}
+.conteneurcarte1{
+    width: 40%;
+    float: left;
+    margin-bottom: 40px;
+}
+.conteneurcarte2{
+    width: 40%;
+    float: right;
+    margin-bottom: 40px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(44,138,205,0.4) ;
+    background-color: rgba(44,138,205,0.6);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: white;
+    font-size: 18px;
+  }
+  
+  .buttonc {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #F59A23;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border: 1px dotted #F59A23;
+  }
+  .buttonc a{
+      color: #F59A23;
+  }
+  
+  .buttonc:hover, a:hover {
+    opacity: 0.7;
+  }
+  a{
+      color: #F59A23;
+  }
+  .conteneurresumec{
+    clear: both;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: rgba(44,138,205,0.4);
+}
+.conteneurglobalc{
+    width: 60%;
+    margin: auto;
+}
+/************ Fin page Crédits ************/
+
+/**************************************/
+/************ Page Doublage**************/
+/**************************************/
+.conteneurglobald{
+    width: 80%;
+    margin: auto;
+}
+.conteneurdoubleur{
+    padding: 40px;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:rgba(44,138,205,0.4) ;
+}
+.conteneurimgd{
+    width: 17%;
+}
+.conteneurimgd img{
+    width: 100%;
+    float: left;
+    border: 1px dashed #F59A23;
+    margin: auto;
+}
+
+.conteneurtextd{
+    width: 83%;
+    padding-right: 0px;
+    padding-left: 30px;
+    float: left;
+}
+
+.conteneurimg2d{
+    width: 17%;
+    float: right
+}
+.conteneurimg2d img{
+    width: 100%;
+    border: 1px dashed #F59A23;
+    float:right ;
+}
+
+.conteneurtext2d{
+    width: 83%;
+    padding-right: 30px;
+    padding-left: 0px;
+    float: right;
+    text-align: right;
+}
+.conteneurtext2d h2{
+    text-align: right;
+}
+.conteneurtextd h2{
+    text-align: left;
+}
+/************ Fin page Doublage**********/
+
+
+/**************************************/
+/************ Page Film **************/
+/**************************************/
+.conteneurresumef h3{
+    font-family: 'Roboto Mono';
+    color: #E0DF18;
+}
+.conteneurglobalf{
+    width: 80%;
+    margin: auto;
+}
+.conteneurresumef{
+    padding: 40px;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:rgba(44,138,205,0.4) ;
+}
+.conteneurcentref{
+    width: 100%;
+    text-align: center;
+}
+.conteneurimgf{
+    width: 17%;
+}
+.conteneurimgf img{
+    width: 100%;
+    float: left;
+    border: 1px dashed #F59A23;
+    margin: auto;
+}
+.conteneurtextf{
+    width: 83%;
+    padding-right: 0px;
+    padding-left: 30px;
+    float: left;
+}
+
+.conteneurimg2f{
+    width: 17%;
+    float: right
+}
+.conteneurimg2f img{
+    width: 100%;
+    border: 1px dashed #F59A23;
+    float:right ;
+}
+
+.conteneurtext2f{
+    width: 83%;
+    padding-right: 30px;
+    padding-left: 0px;
+    float: right;
+    text-align: left;
+
+}
+.conteneurtext2f h2{
+    text-align: right;
+}
+.conteneurtext3f{
+    width: 100%;
+    padding: 0px;
+}
+.conth3_1{
+    text-align: left;
+    padding-left: 70px;
+}
+.conth3_2{
+    text-align: right;
+    padding-right: 70px;
+}
+.contcritique_1{
+    text-align: left;
+}
+.contcritique_2{
+    text-align: right;
+}
+.contnote_1{
+    text-align: right;
+    padding-right: 150px;
+
+}
+.contnote_2{
+    text-align: left;
+    padding-left: 150px;
+
+}
+/* zoom sur image*/
+.lzoom{
+    width: 320px;
+    height: 240px;
+    }
+    .image {
+    width: 100%;
+    height: 100%; 
+    }
+    .image img {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    }
+    .image:hover img {
+    /* L'image est doublée */
+    -webkit-transform:scale(1.3); /* Safari et Chrome */
+    -moz-transform:scale(1.3); /* Firefox */
+    -ms-transform:scale(1.3); /* Internet Explorer 9 */
+    -o-transform:scale(1.3); /* Opera */
+    transform:scale(1.3);
+    }
+/* fin zoom sur image */ 
+
+/************ Fin page Film **************/
+
+/**************************************/
+/********** Version tablette **********/
+/**************************************/
+ @media screen and (max-width: 768px) {
+#conteneur{
+    font-size: 0.8em;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+  .conth1{
+    padding-top: 20px;
+}
+.topnav img{
+    border: 0px solid black;
+}
+
+
+/*Page Doublage*/
+.conteneurimgd{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;  
+}
+.conteneurimgd img{
+    width: 60%;
+    clear: both;
+    float: none;
+    text-align: center;  
+}
+.conteneurtextd{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 3px;
+}
+
+.conteneurimg2d{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;  
+}
+.conteneurimg2d img{
+    width: 60%;
+    clear: both;
+    float: none;
+    text-align: center;  
+}
+.conteneurtext2d{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 3px;
+}
+
+.conteneurtextd h2{
+    text-align: center;
+}
+.conteneurtext2d h2{
+    text-align: center;
+}
+/* Fin Page Doubleur*/
+
+
+/*Page Anecdotes*/
+.conteneurimga{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 5px;
+}
+.conteneurimga img{
+    width: 70%;
+    clear: both;
+    float: none;
+    text-align: center;
+}
+.conteneurimg2a{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 5px;
+}
+.conteneurimg2a img{
+    width: 70%;
+    clear: both;
+    float: none;
+    text-align: center;
+
+}
+.conteneurtexta{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.conteneurtext2a{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.conteneuranecdote h2{
+    text-align: center;
+}
+.conteneurtext2a h2{
+    text-align: center;
+}
+.conteneuranecdote{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:10px;
+}
+/* Fin page anecdotes*/
+
+/*Page Film*/
+.conteneurimgf{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+}
+.conteneurimgf img{
+    width: 70%;
+    text-align: center;
+    clear: both;
+    float: none;
+}
+.conteneurtextf{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 40px;
+}
+.conteneurtext3f{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    clear: both;
+    float: none;
+    text-align: center;
+}
+.conteneurimg2f{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+}
+.conteneurimg2f img{
+    width: 70%;
+    text-align: center;
+    clear: both;
+    float: none;
+}
+.conteneurtext2f{
+    width: 100%;
+    clear: both;
+    float: none;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*Fin Page Film*/
+
+/*Page Création*/
+.conteneurimgcre{
+    width: 45%;
+    clear: both;
+    float: none;
+    text-align: center;
+
+}
+.conteneurimgcre img{
+    width: 30%;
+    text-align: center;
+    float: none;
+    clear: both;
+}
+.conteneurtextcre{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+/*Fin page Création*/
+
+/*Disparition du menu ordinateur*/
+nav {
+    display: none;
+    
+    }
+header{
+   display: none;
+}
+
+/*Menu Burger */
+.topnav {
+    text-align: right;
+    display:block;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    color: #72FF2A;
+    float: right;   
+    z-index: 0;
+    margin-top: 0px;
+    padding-top: 0px;
+    }
+.topnav img{
+    float: left;
+    width: 15%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+    .topnav a {
+        margin-left: 20%;
+        display: block;
+        text-align: right;
+        padding: 8px 10px;
+        text-decoration: none;
+        font-size: 110%;
+        color: #72FF2A;
+        background-color: black;
+        opacity: 0.8;
+        font-family: 'Goldman';
+       
+        }
+    .topnav a:hover{
+      
+      text-align: center;
+      text-decoration: none;
+    }    
+    .bars{
+        background-color: black;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #72FF2A;
+        margin: 6px 0;
+        transition: 0.4s; 
+      }
+
+
+/*rotation de l'icone*/
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+
+    .topnav a {
+        display: none;
+        }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+    .topnav.responsive {
+      position: relative;
+      opacity: 0.85;
+      }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+      }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    .topnav.responsive a:hover {
+      background-color:rgb(158, 137, 137);
+    }
+
+/*Fin menu burger*/
+  
+}
+
+/**************************************/
+/********* Version smartphone *********/
+/**************************************/
+@media screen and (max-width: 450px) {
+  /********* Partie commune à toutes les pages *********/
+    footer{
+      font-size: 0.7em;
+    }
+    body{
+      font-size: 0.8em;
+    }
+    h1{
+      font-size: 1.5em;
+    }
+    h2{
+      font-size: 1.5em;
+    }
+    h3{
+      font-size: 1em;
+    }
+    .topnav img{
+      float: left;
+      width: 40%;
+      margin-left: 15px;
+  }
+  .conteneurglobal{
+    padding: 10px;
+}
+
+  /********* Fin partie commune à toutes les pages *********/
+  /* Video de d'ouverture*/
+  .content{
+      text-align: center;
+  }
+  /* Page Film*/
+  .contnote_1{
+    padding-right: 15px;
+}
+.contnote_2{
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+.conth3_1{
+    text-align: center;
+    padding: 0;
+}
+.conth3_2{
+    text-align: center;
+    padding: 0;
+}
+.contcritique_1{
+    text-align: center;
+}
+.contcritique_2{
+    text-align: center;
+}
+.conteneurresumef{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Fin page Film*/
+
+
+
+/*Page Crédits*/
+.conteneurcarte1{
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.conteneurcarte2{
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/*Fin page Crédits*/
+
+/*Page Création*/
+.text{
+    display: none;
+}
+.hover{
+    display: none;
+}
+/*Fin page Création*/
+
+}

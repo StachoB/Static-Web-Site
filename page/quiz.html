@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Quiz</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png"><!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png"><!--Favicon-->
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png"><!--Favicon-->
+        <meta name="author" content="Barbara Stachowicz"> <!--Auteur du site-->
+        <meta name="keywords" content="Kim Possible Disney Channel animation"> <!-- Mots clés decrivants le site-->
+        <meta name="description" content="Site vitrine sur le thème du dessin animé Kim Possible"> <!-- Description du site-->
+	</head>
+
+	<body>
+        <div id="conteneurg">
+          <!--Navigation Ordinateur-->
+        <header>
+            <a href="../page/acceuil.html"><img src="../img/logo2.png" alt="Logo"></a>
+        <div id=nav>
+        <nav class="barre">
+            <ul>
+                <li><a href="../page/presentation.html">Présentation</a></li>
+                <li><a href="#" >Production</a>    
+                 <ul class="sous">
+                        <li><a href="../page/creation.html">Création</a></li>
+                        <li><a href="../page/doublage.html">Doublage</a></li>
+                 </ul>  
+                </li>    
+                <li><a href="../page/galerie.html">Galerie</a></li>
+                
+                <li><a href="#" >En savoir +</a>
+                <ul class="sous">  
+                        <li><a href="../page/film.html">Le film</a></li>
+                        <li><a href="../page/episodes.html">Episodes mythiques</a></li>
+                        <li><a href="../page/anectdotes.html">Anecdotes</a></li>
+                </ul> 
+                </li>    
+                <li><a href="../page/quiz.html">Quiz</a></li>
+                
+                <li><a href="#" class="dropbtn">Contact</a>
+                    <ul class="sous">
+                        <a href="../page/formulaire.html">Formulaire</a>
+                        <a href="../page/credit.html">Crédits</a>
+                    </ul>
+                </li> 
+                
+            </ul>
+        </nav>
+        </div>
+        </header>
+
+        <!-- Navigation sur tablette/mobile -->
+	<!-- Menu Burger -->
+	 <div class="topnav" id="myTopnav">
+        <img src="../img/logo2.png" alt="logo Kim Possible">
+       <div class=iconcontainer>
+                 <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)" >
+                   <div class="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                   </div>
+                </a>
+       </div>
+                <br>
+                <br> <br>
+                <a href="../page/acceuil.html">Accueil</a>
+                <a href="../page/presentation.html">Présentation</a>
+                <a href="#"> Production</a>
+                <a href="../page/creation.html" style="text-indent: 2em;">Création</a>
+                <a href="../page/doublage.html" style="text-indent: 2em;">Doublage</a> 
+                <a href="../page/galerie.html">Galerie</a>
+                <a href="#">En savoir +</a>
+                <a href="../page/film.html" style="text-indent: 2em;">Le film</a>
+                <a href="../page/episodes.html" style="text-indent: 2em;">Episodes mythiques</a> 
+                <a href="../page/anectdotes.html" style="text-indent: 2em;">Anecdotes</a> 
+                <a href="../page/quiz.html"> Quiz</a> 
+                <a href="#">Contact</a>
+                <a href="../page/formulaire.html" style="text-indent: 2em;">Formulaire</a>
+                <a href="../page/credit.html" style="text-indent: 2em;">Crédits</a>
+      </div>
+
+
+    <h1 class="conth1">QUIZ</h1>
+    <!--Quiz-->
+    <div class="conteneurglobal" style="text-align: left;">
+        <div id="main">
+            
+            <h2>Connaissez vous bien Kim Possible ?</h2>
+            <form id="form1">
+                <br/>
+                <h3>Combien de saisons compte Kim Possible ?</h3>
+                <br/>
+                <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" /> 2</label>
+                <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" /> 3 </label>
+                <label for="var_info"><input type="radio" name="variable" value="25" id="var_info" /> 4 </label>
+                <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/> 5</label>
+                <br/>
+                <h3>Qui double Robin Trépide ?</h3>
+                <br/>
+                <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/> Will Friedle</label>
+                <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/> Neil Harris</label>
+                <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" /> John Cena</label>
+                <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" /> Ryan Renolds</label>
+                <br/>
+                <h3>Qui est l'ennemi juré de Kim Possible ?</h3>
+                <br/>
+                <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" /> Robin Trépide</label>
+                <label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" /> Shego</label>
+                <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" /> Wallace</label>
+                <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" /> Monique</label>
+                <br/>
+                <h3>Quel animal est Rufus ?</h3>
+                <br/>
+                <label for="if_string"><input type="radio" name="ifstate" value="25" id="if_string" /> Un rat-taupe</label>
+                <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" /> Un furet</label>
+                <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" /> Un chien</label>
+                <label for="if_condition"><input type="radio" name="ifstate"  value="0" id="if_condition" /> Un hamster</label>
+                <br/>
+            <div style="text-align: center;"><button type="submit" value="Submit">VERIFIER</button>
+             
+                </form>
+                
+            
+            <p>Votre score est de : <span id="grade">__</span> /100</p>
+            <br>
+            <p id="grade2"></p></div>
+            </div>
+    </div>
+    <!--Fonction Quiz-->
+    <script>
+        document.getElementById("form1").onsubmit=function() {
+               variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+               sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+               con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+               ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+               
+               
+               result = variable + sub + con + ifstate;
+               
+            document.getElementById("grade").innerHTML = result;
+            if (result == 0) {result2 = "Tu feras mieux la prochaine fois... About 30% serious, 70% mock (Shego)."};
+            if (result == 25) {result2 = "Tu feras mieux la prochaine fois... About 30% serious, 70% mock (Shego)."};
+            if (result == 50) {result2 = "Bravo ! You do me proud by just being you (Kim Possible)."};
+            if (result == 75) {result2 = "Bravo ! You do me proud by just being you (Kim Possible)."};
+            if (result == 100) {result2 = "Bravo ! You do me proud by just being you (Kim Possible)."};
+            document.getElementById("grade2").innerHTML = result2; 
+
+        
+        
+        return false; // required to not refresh the page; just leave this here
+        } //this ends the submit function
+        
+        </script>
+         <script>
+            function deroul() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+            }
+            function Bar(x) {
+            x.classList.toggle("change");
+            }
+   </script>
+<!--Fonctions menu burger-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+<script>
+    function deroul() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+    }
+    function Bar(x) {
+    x.classList.toggle("change");
+    }
+</script>
+  <!--Footer-->
+    <footer>
+        <div>
+            <p>Barbara Stachowicz - MM01 A20 - <a href="#">Haut de page</a></p>
+            
+        </div>	
+    </footer>
+    </div>
+    </body>
+</html>
